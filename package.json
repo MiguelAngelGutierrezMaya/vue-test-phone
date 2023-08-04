@@ -1,12 +1,40 @@
 {
   "name": "vue-test-phone",
+  "description": "A Vue.js project",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Miguel Angel",
+    "email": "gutierrezmayamiguelangel@gmail.com"
+  },
+  "repository": "https://github.com/MiguelAngelGutierrezMaya/vue-test-phone",
+  "bugs": "https://github.com/MiguelAngelGutierrezMaya/vue-test-phone/issues",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vuejs2",
+    "vue2",
+    "vue-component",
+    "vue-phone",
+    "vue-phone-field",
+    "vue-phone-input",
+    "vue-phone-number",
+    "vue-phone-number-field",
+    "vue-phone-number-input",
+    "vue-phone-number-field-input",
+    "vue-phone-number-field-input-component"
+  ],
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-library": "vue-cli-service build --target lib --name vue-phone-field ./src/install.js",
     "lint": "vue-cli-service lint"
   },
+  "main": ".dist/vue-phone-field.common.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "libphonenumber-js": "^1.10.13",
